@@ -1,0 +1,141 @@
+body {
+  background-image: url("../images/aluminum.jpg"); /* has a steel-like appearance */
+ }
+header {
+  background-color: black;
+  text-align: center; 
+  }
+.header_insignia{
+  display: none;
+}
+a {
+  text-decoration: none;
+  font-family: Share, cursive;
+}
+.li_nav{
+  list-style-type:none;
+  list-style-image: url("../images/insignia_sm.jpg");
+  background-color: white; 
+  border-width: 0.1em;
+  border-color: black;
+  border-style: solid;
+}
+hr {
+  background-color: black;
+}
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Share, cursive;
+}
+audio{
+  display: none;
+}
+reset{
+  font-family: Share, cursive;
+}
+submit{
+  font-family: Share, cursive;
+}
+.adcopy{
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+}
+h1{
+  font-family: "Diplomata SC", cursive;
+  font-size: 20px;
+} 
+form input, select{
+  font-family: Share, cursive;
+  font-size: 16px;
+  font-weight: bold;
+}
+option{
+  font-family: Share, cursive;
+  font-size: 16px;
+  font-weight: bold;
+}
+#next{
+  background-image: url("../images/superman_vintage_next.gif");
+  width: 270px;
+  height: 205px;
+}
+label {
+  font-family: "Cormorant Garamond", cursive;
+  font-size: 16px; 
+  font-weight: bold; 
+}
+.mono{
+  color: red;
+  font-family: Share, cursive;
+  font-weight: bold;
+}
+.kvariety{
+  pointer-events: none; /* turns off tooltips in mobile mode */
+  float: none;
+} 
+.map, .upupandaway, .postcards{
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.italic{
+  font-style: italic;
+}
+#quiz{
+  display: block;
+}
+
+/* default media query for mobile devices ends here */
+
+/* media query for tablets */
+@media screen and (min-width: 768px) {
+  .li_nav{
+    list-style-image: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .ul_horiz{
+    text-align: center;
+    text-decoration: none;
+    font-family: Share, cursive;    
+  }
+  .header_insignia{
+    display: inline-block;
+  }
+  .header_insignia_sm{
+    display: none;
+  }
+  .no_style{
+    text-decoration: none;
+    font-family: Share, cursive;
+  } 
+  .floatleft, #moveNext{
+    float: left;
+  } 
+  .header_logo {
+    background-image: url('../images/logotext.png');
+  }  
+}    
+/* media query for desktops */
+@media screen and (min-width: 1024px) {
+   .kvariety {
+    pointer-events: auto;  
+  }
+  audio{
+    display: inline;    
+  }
+  .upupandaway{
+      display: inline;
+      text-align: center;
+  }
+  .header_logo {
+    background-image: url('../images/logotext_133_pct.png');
+  }
+  #superman_vintage{
+    display: block;
+  } 
+}    

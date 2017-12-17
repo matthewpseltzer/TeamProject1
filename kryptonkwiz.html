@@ -1,0 +1,63 @@
+<!- Matt Seltzer ->
+<!- December 16, 2017 ->
+<!- kryptonkwiz.html ->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/kryptomania.css">
+  <link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+  <title>Play and Win!</title>  
+</head>
+<body>
+    <header>
+        <img class="header_insignia_sm" src="images/insignia_sm.jpg" alt="small Superman insignia"/>
+        <img class="header_insignia" src="images/insignia.jpg" alt="Superman insignia"/>
+        <img class ="header_logo" src="images/logotext_33_pct.png" alt="Krytomania logo"/>
+        <img class="header_insignia" src="images/insignia.jpg" alt="Superman insignia"/>
+        <img class="header_insignia_sm" src="images/insignia_sm.jpg" alt="small Superman insignia"/>
+    </header> 
+    <nav>
+        <ul class="ul_horiz">
+            <li class="li_nav"><a class="no_style" href="index.html">Welcome to Kryptomania!</a></li>
+            <li class="li_nav"><a class="no_style" href="topsellers.html">Top Sellers</a></li>
+            <li class="li_nav"><a class="no_style" href="contactus.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    <article class="adcopy">
+        <h1>Play and Win!</h1>
+        <p>Discounts on our fine merchandise are available for high scorers.  The number of correct answers determines how much you'll save.</p>
+        <p>How full is <span class="italic">your </span>store of Superman lore?</p>
+        <div id="quiz">
+            <div>
+                <label id="questionNumberAndText">
+                </label>
+            </div> 
+            <div>
+                <input type="radio" id="choice0" name="choices" class="choice"><label for="choice0" class="choiceText"></label><br/>
+                <input type="radio" id="choice1" name="choices" class="choice"><label for="choice1" class="choiceText"></label><br/>
+                <input type="radio" id="choice2" name="choices" class="choice"><label for="choice2" class="choiceText"></label><br/>
+                <input type="radio" id="choice3" name="choices" class="choice"><label for="choice3" class="choiceText"></label><br/>
+            </div>
+            <br/>
+            <div id="moveNext" class="postcards"> 
+                <button id="next" ></button>
+                <br/>               
+                <p class="adcopy">Click on the picture of Superman to fly to the next question!</p>
+                <div class="postcards">
+                    <img src="images/back_of_postcard_sm.jpg" alt="back of Krypton postcard"/> 
+                </div>               
+            </div>
+        </div>             
+    </article>    
+    <footer>
+      <!- p Copyright &#169 2017, Kryptomania</p ->    
+    </footer>
+    <script src="js/kryptomania.js"></script>
+</body>
+</html>
