@@ -36,16 +36,25 @@ function setUpQuiz(){
     refreshContent(); 
    
 }
+
 /*
 function isChecked(){
-    
-        else
-        {
-            return false;
+    checkedFlag = false;
+    for (var i = 0; i < radios.length; i++){
+        if (radios[i].checked){
+            checkedFlag = true;
         }
-    }    
+    }
+    if(checkedFlag){
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 */
+
 function moveNext(){
     if (currentQuestion < quizQuestions.length){
         setUserResponse();                 
@@ -56,14 +65,14 @@ function moveNext(){
         }
         else if (currentQuestion = quizQuestions.length)
         {
-            setUserResponse();         
+            setUserResponse();
+            window.alert("Congratulations!  You've reached the end of the quiz!  Your score is " + score() + ".");
+            var next = document.getElementById("next");
+            next.disabled = true;         
         }          
     }
-    else 
-    {
-        window.alert("Congratulations!  You've reached the end of the quiz!  Your score is " + score() + ".");
-    }
-} 
+}
+
     
 // updates radio button label content and text of quiz question
 function refreshContent(){
@@ -76,7 +85,7 @@ function refreshContent(){
 }
 
 function setUserResponse(){
-    for(var i = 0; i < radios.length - 1; i++){
+    for(var i = 0; i < radios.length; i++){
         if (radios[i].checked === true) {
            responses.push(i);
         }
@@ -84,7 +93,7 @@ function setUserResponse(){
 }
 
 function clearSelections(){
-    for (var i = 0; i < radios.length -1; i++){
+    for (var i = 0; i < radios.length; i++){
         radios[i].checked = false;
     }
 
